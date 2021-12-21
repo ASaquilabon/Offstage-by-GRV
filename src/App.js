@@ -1,22 +1,18 @@
 import React from 'react';
 import Hero from './components/hero/Hero';
 import styled, { createGlobalStyle } from 'styled-components';
+import AboutUs from './components/AboutUs/AboutUs'
 
-
-const GlobalStyle = createGlobalStyle`
-    html {
-      box-sizing: border-box;
-    }
-    *, *:before, *:after {
-      box-sizing: inherit;
-      color: #fff
-    } 
-    
-`;
+const Background = styled.div`
+  background-color: #000;
+`
 
 function App() {
   return (
+    <Background>
     <Hero />
+    <AboutUs />
+    </Background>
   );
 }
 
